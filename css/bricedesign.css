@@ -173,6 +173,7 @@ article img {
 
 @media only screen and (min-width:660px) {
   article div.gallery {
+    margin-top: 40px;
     margin-right: -20px;
     overflow: hidden;
   }
