@@ -1,73 +1,136 @@
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
 }
 
-img {
+/* Block Level Elements */
+
+img, section, article, header, footer, nav {
   display: block;
 }
 
-body {
-  font-family: Lato, sans-serif;
-  font-size: 0.750em;
-  line-height: 1.666em;
-  background-color: #F2F2F2;
-  background-image: url(images/light-grain.png);
-  color: #919191;
-}
-
-#root-nav {
-  position: absolute;
-  right: 50%;
-  margin-right: -155px;
-  bottom: 0;
-  font-size: 1.250em;
-  line-height: 40px;
-  text-align: center;
-}
-
-#root-nav a {
-  color: #D4D4D4;
-  font-weight: 300;
-  text-decoration: none;
-}
+/* Visible for Accessibility Only */
 
 #root-nav h3, #section-heading, #all-projects-nav, #all-projects-nav h4 {
   display: none;
 }
 
-#root-nav ul li {
-  display: inline-block;
-  width: 99px;
-  height: 40px;
-  border-right: 1px solid rgba(255, 255, 255, 0.250);
+/* Body */
+
+body {
+  /* Fonts */
+  font-family: Lato, sans-serif;
+  font-size: 0.750em;
+  line-height: 1.666em;
   
+  /* Colors */
+  background-color: #E5E5E5;
+  background-image: url(/images/light-grain.jpg);
+  color: #737373;
 }
 
-#root-nav ul li:first-child {
-  background: url(images/topnav-lowlight.png) left bottom no-repeat;
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #666666;
 }
 
-#root-nav ul li:first-child {
-  border-left: 1px solid rgba(255, 255, 255, 0.250);
+h1, h2, h3 {
+  margin-bottom: 40px;
 }
+
+h2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Links */
+
+a:link {
+  color: #E68300;
+}
+
+/* Page Header */
+
+body > header {
+  width: 100%;
+  background-color: #5A5A5A;
+  background-image: url(/images/header-background.jpg);
+  color: white;
+}
+
+body > header > div.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Masthead */
+
+#masthead {
+  width: 280px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  margin-left: -150px;
+  background: url(/images/masthead.png) left top no-repeat;
+  text-indent: -1000%;
+}
+
+#masthead a {
+  color: white;
+}
+
+/* Root Navigation */
+
+#root-nav {
+  position: absolute;
+  right: 50%;
+  margin-right: -155px;
+  top: 80px;
+  
+  /* Fonts */
+  font-size: 1.333em;
+  line-height: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#root-nav a {
+  color: #FF9100;
+  text-decoration: none;
+}
+
+#root-nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#root-nav ul li {
+  float: left;
+  width: 100px;
+  height: 40px;  
+}
+
+#root-nav ul li.here {
+  background: url(/images/topnav-lowlight.png) left top no-repeat;
+}
+
+/* Next/Previous Projects Navigation */
 
 #adjacent-projects-nav {
   display: none;
 }
 
-#page-header {
-  width: 100%;
-  background-color: #4A4A4A;
-  background-image: url(images/dark-grain.png);
-  color: white;
-}
-
-
-
-#masthead a {
-  color: white;
-}
+/* Main Content */
 
 #content-wrapper {
   width: 100%;
@@ -78,25 +141,7 @@ body {
   box-sizing: border-box;
 }
 
-#page-header-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 980px;
-  height: 160px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#masthead {
-  width: 300px;
-  height: 80px;
-  position: absolute;
-  left: 50%;
-  top: 20px;
-  margin-left: -150px;
-  background: url('images/masthead.png') no-repeat left top;
-  text-indent: -1000%;
-}
+/* Article */
 
 article {
   margin-top: 40px;
@@ -124,11 +169,9 @@ article img {
   margin-right: auto;
 }
 
-@media only screen and (min-width:660px) {
-  article {
-    margin-top: 60px;
-  }
+/* Viewports 660px or Larger */
 
+@media only screen and (min-width:660px) {
   article div.gallery {
     margin-right: -20px;
     overflow: hidden;
@@ -145,6 +188,8 @@ article img {
   }
   
 }
+
+/* Viewports 900px or Larger */
 
 @media only screen and (min-width:900px) {
   #content-wrapper {
@@ -180,12 +225,15 @@ article img {
   }
   
   #root-nav {
-    right: 40px;
+    right: 20px;
     margin-right: 0;
   }
   
+  /* Masthead */
+  
   #masthead {
-    left: 20px;
+    height: 70px;
+    left: 10px;
     margin-left: 0;
   }
   
