@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 /* Block Level Elements */
 
 img, section, article, header, footer, nav {
@@ -52,6 +57,11 @@ h2 {
 
 a:link {
   color: #E68300;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* Page Header */
@@ -60,6 +70,7 @@ body > header {
   width: 100%;
   background-color: #5A5A5A;
   background-image: url(/images/header-background.jpg);
+  background-size: 300px 140px;
   color: white;
 }
 
@@ -82,6 +93,7 @@ body > header > div.wrapper {
   top: 30px;
   margin-left: -140px;
   background: url(/images/masthead.png) left top no-repeat;
+  background-size: 280px 70px;
   text-indent: -1000%;
 }
 
@@ -107,6 +119,10 @@ body > header > div.wrapper {
 #root-nav a {
   color: #FF9100;
   text-decoration: none;
+}
+
+#root-nav a:hover {
+  text-decoration: underline;
 }
 
 #root-nav ul {
@@ -165,8 +181,12 @@ article h1 {
 
 article img {
   max-width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
+  
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
 }
 
 /* Viewports 660px or Larger */
@@ -244,4 +264,14 @@ article img {
     max-width: 1020px;
     height: 120px;
   }
+}
+
+/* High Resolution Displays */
+
+#masthead {
+  background-image: url(/images/masthead@2x.png);
+}
+
+body > header {
+  background-image: url(/images/header-background@2x.jpg);
 }
