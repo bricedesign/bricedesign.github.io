@@ -138,6 +138,7 @@ body > header > div.wrapper {
 
 #root-nav ul li.here {
   background: url(/images/topnav-lowlight.png) left top no-repeat;
+  background-size: 100px 40px;
 }
 
 /* Next/Previous Projects Navigation */
@@ -245,6 +246,7 @@ article img {
   
   #all-projects-nav ul li.here {
     background: url(/images/sidenav-lowlight.png) left center no-repeat;
+    background-size: 239px 40px;
   }
   
   #root-nav {
@@ -266,12 +268,20 @@ article img {
   }
 }
 
-/* High Resolution Displays */
-
-#masthead {
-  background-image: url(/images/masthead@2x.png);
-}
-
-body > header {
-  background-image: url(/images/header-background@2x.jpg);
+@media (min-resolution: 100dpi), (-webkit-min-device-pixel-ratio: 1.1) {
+  #masthead {
+    background-image: url(/images/masthead@2x.png);
+  }
+  
+  body > header {
+    background-image: url(/images/header-background@2x.jpg);
+  }
+  
+  #all-projects-nav ul li.here {
+    background-image: url(/images/sidenav-lowlight@2x.png);
+  }
+  
+  #root-nav ul li.here {
+    background-image: url(/images/topnav-lowlight@2x.png);
+  }
 }
