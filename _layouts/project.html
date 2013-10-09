@@ -1,6 +1,30 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
 
-{{ content }}
+
+
+<h3 id="section-heading">Portfolio</h3>
+
+<!-- All Projects Navigation -->
+
+{% include all-projects-nav.html %}
+
+<!-- Article -->
+
+<article>
+  <h2>{{ page.title }}</h2>
+  
+  {{ content }}
+</article>
+
+<!-- Next/Previous Project Navigation -->
+
+<nav id="adjacent-projects-nav">
+  <h4>Other Projects</h4>
+  
+  <ul>
+    <li><a href="#">Previous Project</a></li>
+    <li><a href="#">Next Project</a></li>
+  </ul>
+</nav>
