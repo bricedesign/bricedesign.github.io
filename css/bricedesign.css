@@ -78,7 +78,7 @@ body > header > div.wrapper {
   position: relative;
   width: 100%;
   max-width: 980px;
-  height: 140px;
+  height: 180px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -87,7 +87,7 @@ body > header > div.wrapper {
 
 #masthead {
   width: 280px;
-  height: 50px;
+  height: 70px;
   position: absolute;
   left: 50%;
   top: 30px;
@@ -104,10 +104,11 @@ body > header > div.wrapper {
 /* Root Navigation */
 
 #root-nav {
+  /* Positioning */
   position: absolute;
+  top: 140px;
   right: 50%;
   margin-right: -155px;
-  top: 80px;
   
   /* Fonts */
   font-size: 1.333em;
@@ -117,7 +118,7 @@ body > header > div.wrapper {
 }
 
 #root-nav a {
-  color: #FF9100;
+  color: #FF9100; /* Slightly brighter than normal links for darker background */
   text-decoration: none;
 }
 
@@ -137,7 +138,7 @@ body > header > div.wrapper {
 }
 
 #root-nav ul li.here {
-  background: url(/images/topnav-lowlight.png) left top no-repeat;
+  background: url(/images/topnav-lowlight-lower@2x.png) left top no-repeat;
   background-size: 100px 40px;
 }
 
@@ -192,7 +193,7 @@ article img {
 
 /* Viewports 660px or Larger */
 
-@media only screen and (min-width:660px) {
+@media only screen and (min-width:660px) {  
   article div.gallery {
     margin-top: 40px;
     margin-right: -20px;
@@ -224,6 +225,12 @@ article img {
     margin-left: 0;
     margin-right: 0;
   }
+  
+  /* Page Header */
+  
+  body > header > div.wrapper {
+    height: 160px;
+  }
 
   /* Projects Navigation */
   
@@ -249,15 +256,21 @@ article img {
     background-size: 239px 40px;
   }
   
+  /* Root Navigation */
+  
   #root-nav {
+    top: 80px;
     right: 20px;
     margin-right: 0;
+  }
+  
+  #root-nav ul li.here {
+    background-image: url(/images/topnav-lowlight-upper@2x.png);
   }
   
   /* Masthead */
   
   #masthead {
-    height: 70px;
     left: 10px;
     margin-left: 0;
   }
@@ -279,9 +292,5 @@ article img {
   
   #all-projects-nav ul li.here {
     background-image: url(/images/sidenav-lowlight@2x.png);
-  }
-  
-  #root-nav ul li.here {
-    background-image: url(/images/topnav-lowlight@2x.png);
   }
 }
