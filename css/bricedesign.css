@@ -80,7 +80,7 @@ body > header > div.wrapper {
   position: absolute;
   left: 50%;
   top: 30px;
-  margin-left: -150px;
+  margin-left: -140px;
   background: url(/images/masthead.png) left top no-repeat;
   text-indent: -1000%;
 }
@@ -204,12 +204,14 @@ article img {
     margin-right: 0;
   }
 
+  /* Projects Navigation */
+  
   #all-projects-nav {
     display: block;
     margin-top: 50px;
     float: right;
     width: 240px;
-    border-left: 1px solid #DCDCDC;
+    border-left: 1px solid #CDCCCC;
     line-height: 3.333em;
   }
   
@@ -222,7 +224,7 @@ article img {
   }
   
   #all-projects-nav ul li.here {
-    background: url(images/sidenav-lowlight.png) left center no-repeat;
+    background: url(/images/sidenav-lowlight.png) left center no-repeat;
   }
   
   #root-nav {
