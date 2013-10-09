@@ -29,19 +29,18 @@
     <header>
       <div class="wrapper">
         <hgroup id="masthead">
-          <h1><a href="/">{{ site.name }}</a></h1>
+          <h1>
+            {% if page.url == '/index.html' %}
+              {{ site.name }}
+            {% else %}
+              <a href="/">{{ site.name }}</a>
+            {% endif %}
+          </h1>
+          
           <h2>Interiors Consultancy &amp; Project Management</h2>
         </hgroup>
         
-        <nav id="root-nav">
-          <h3>Main Site Sections</h3>
-          
-          <ul>
-            <li class="here"><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        {% include root-nav.html %}
       </div>
     </header>
     
