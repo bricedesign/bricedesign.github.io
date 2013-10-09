@@ -1,0 +1,15 @@
+{% if href == page.location %}
+  <li class="here">
+{% elsif href == page.parent-location %}
+  <li class="here">
+{% else %}
+  <li>
+{% endif %}
+
+{% if href == page.location %}
+  {{ title }}
+{% else %}
+  <a href="{{ href }}">{{ title }}</a>
+{% endif %}
+
+</li>

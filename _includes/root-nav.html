@@ -1,0 +1,14 @@
+<nav id="root-nav">
+  <h3>Main Site Sections</h3>
+  
+  <ul>
+    {% assign title = 'Portfolio' %} {% assign href = '/folio/' %}
+    {% include root-nav-item.html %}
+    
+    {% assign title = 'About' %} {% assign href = '/about/' %}
+    {% include root-nav-item.html %}
+
+    {% assign title = 'Contact' %} {% assign href = '/contact/' %}
+    {% include root-nav-item.html %}
+  </ul>
+</nav>
