@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+/* Disable Font Scaling on iOS */
+
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -16,7 +18,7 @@ img, section, article, header, footer, nav {
   display: block;
 }
 
-/* Visible for Accessibility Only */
+/* Elements Visible for Accessibility & Semantics Only */
 
 #root-nav h3, #section-heading, #all-projects-nav, #all-projects-nav h4 {
   display: none;
@@ -92,7 +94,6 @@ body > header {
 body > header > div.wrapper {
   position: relative;
   width: 100%;
-  max-width: 1020px;
   height: 180px;
   margin-left: auto;
   margin-right: auto;
@@ -145,13 +146,11 @@ hgroup#masthead {
 /* Root Navigation */
 
 #root-nav {
-  /* Positioning */
   position: absolute;
   top: 140px;
   right: 50%;
   margin-right: -155px;
   
-  /* Fonts */
   font-size: 1.333em;
   line-height: 40px;
   font-weight: 300;
@@ -232,6 +231,8 @@ article img {
   cursor: -moz-zoom-in;
 }
 
+/* Portfolio Index */
+
 a.folio-thumb {
   display: block;
   float: left;
@@ -270,9 +271,9 @@ div.folio-thumb-grid {
   
 }
 
-/* Viewports 900px or Wider */
+/* Viewports 1020px or Wider */
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1020px) {
   #content-wrapper {
     width: 1020px;
     padding-left: 40px;
@@ -287,6 +288,7 @@ div.folio-thumb-grid {
   /* Page Header */
   
   body > header > div.wrapper {
+    width: 1020px;
     height: 160px;
   }
 
@@ -369,7 +371,7 @@ div.folio-thumb-grid {
 
 /* High Resolution Viewports 900px or Wider */
 
-@media (min-width:900px) and (min-resolution: 100dpi), (min-width:900px) and (-webkit-min-device-pixel-ratio: 1.1) {
+@media (min-width:1020px) and (min-resolution: 100dpi), (min-width:1020px) and (-webkit-min-device-pixel-ratio: 1.1) {
   #root-nav ul li.here {
     background-image: url(/images/topnav-lowlight-upper@2x.png);
   }
