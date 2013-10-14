@@ -48,9 +48,24 @@ h1, h2, h3 {
   margin-bottom: 40px;
 }
 
+h2, h3, h4, h5, h6 {
+  line-height: 20px;  
+}
+
 h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
   font-size: 16px;
-  line-height: 20px;
+}
+
+article > h4 {
+  text-align: center;
 }
 
 /* Links */
@@ -77,7 +92,7 @@ body > header {
 body > header > div.wrapper {
   position: relative;
   width: 100%;
-  max-width: 980px;
+  max-width: 1020px;
   height: 180px;
   margin-left: auto;
   margin-right: auto;
@@ -85,7 +100,7 @@ body > header > div.wrapper {
 
 /* Masthead */
 
-#masthead {
+hgroup#masthead {
   width: 280px;
   height: 70px;
   position: absolute;
@@ -95,6 +110,32 @@ body > header > div.wrapper {
   background: url(/images/masthead.png) left top no-repeat;
   background-size: 280px 70px;
   text-indent: -1000%;
+}
+
+#masthead > h1 {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+}
+
+#masthead > h1 > a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;  
+}
+
+#masthead > h2 {
+  position: absolute;
+  margin: 0;
+  top: 50;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 #masthead a {
@@ -138,7 +179,7 @@ body > header > div.wrapper {
 }
 
 #root-nav ul li.here {
-  background: url(/images/topnav-lowlight-lower@2x.png) left top no-repeat;
+  background: url(/images/topnav-lowlight-lower.png) left top no-repeat;
   background-size: 100px 40px;
 }
 
@@ -153,7 +194,7 @@ body > header > div.wrapper {
 #content-wrapper {
   width: 100%;
   max-width: 1020px;
-  margin: 0 auto;
+  margin: 40px auto 60px auto;
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: border-box;
@@ -191,7 +232,24 @@ article img {
   cursor: -moz-zoom-in;
 }
 
-/* Viewports 660px or Larger */
+a.folio-thumb {
+  display: block;
+  float: left;
+  text-align: right;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+a.folio-thumb img {
+  /*width: 220px;
+  height: 160px;*/
+}
+
+div.folio-thumb-grid {
+  margin-right: -20px;
+}
+
+/* Viewports 660px or Wider */
 
 @media only screen and (min-width:660px) {  
   article div.gallery {
@@ -212,7 +270,7 @@ article img {
   
 }
 
-/* Viewports 900px or Larger */
+/* Viewports 900px or Wider */
 
 @media only screen and (min-width:900px) {
   #content-wrapper {
@@ -260,29 +318,39 @@ article img {
   
   #root-nav {
     top: 80px;
-    right: 20px;
+    right: 40px;
     margin-right: 0;
   }
   
   #root-nav ul li.here {
-    background-image: url(/images/topnav-lowlight-upper@2x.png);
+    background-image: url(/images/topnav-lowlight-upper.png);
   }
   
   /* Masthead */
   
-  #masthead {
-    left: 10px;
+  hgroup#masthead {
+    left: 30px;
     margin-left: 0;
   }
+  
+  /* Page Header */
   
   #page-header-wrapper {
     max-width: 1020px;
     height: 120px;
   }
+  
+  /* Article */
+  
+  article > h4 {
+    text-align: left;
+  }
 }
 
+/* High Resolution */
+
 @media (min-resolution: 100dpi), (-webkit-min-device-pixel-ratio: 1.1) {
-  #masthead {
+  hgroup#masthead {
     background-image: url(/images/masthead@2x.png);
   }
   
@@ -292,5 +360,17 @@ article img {
   
   #all-projects-nav ul li.here {
     background-image: url(/images/sidenav-lowlight@2x.png);
+  }
+  
+  #root-nav ul li.here {
+    background-image: url(/images/topnav-lowlight-lower@2x.png);
+  }
+}
+
+/* High Resolution Viewports 900px or Wider */
+
+@media (min-width:900px) and (min-resolution: 100dpi), (min-width:900px) and (-webkit-min-device-pixel-ratio: 1.1) {
+  #root-nav ul li.here {
+    background-image: url(/images/topnav-lowlight-upper@2x.png);
   }
 }
