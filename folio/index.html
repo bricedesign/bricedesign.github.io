@@ -7,12 +7,10 @@ body-class: folio
 
 <h3 id="site-section-heading">Portfolio</h3>
 
-<h4>All Categories</h4>
-
 <div class="folio-thumb-grid">
   {% for post in site.posts %}
     <a href="{{ post.url }}" class="folio-thumb">
-      <img width="300" height="220" />
+      <img src="{{ post.url}}/thumb.jpg" width="300" height="220" />
       {{ post.title }}
     </a>
   {% endfor %}
