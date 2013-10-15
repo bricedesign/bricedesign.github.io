@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #666666;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin-bottom: 40px;
 }
 
@@ -192,18 +192,21 @@ hgroup#masthead {
 
 #content-wrapper {
   width: 100%;
-  max-width: 1020px;
   margin: 40px auto 60px auto;
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+body.folio div#content-wrapper {
+  margin-top: 60px;
+  width: 320px;
 }
 
 /* Article */
 
 article {
-  margin-top: 40px;
-  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -264,6 +267,10 @@ div.folio-thumb-grid {
     padding-right: 20px;
   }
   
+  body.folio div#content-wrapper {
+    width: 660px;
+  }
+  
   article div.gallery {
     margin-right: -20px;
     overflow: hidden;
@@ -284,7 +291,7 @@ div.folio-thumb-grid {
 /* Viewports 1020px or Wider */
 
 @media only screen and (min-width:1020px) {
-  div#content-wrapper {
+  div#content-wrapper, body.folio div#content-wrapper {
     width: 1020px;
     padding-left: 40px;
     padding-right: 40px;
