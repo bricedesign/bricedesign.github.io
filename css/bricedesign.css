@@ -231,6 +231,10 @@ article img {
   cursor: -moz-zoom-in;
 }
 
+article div.gallery {
+  margin-top: 40px;
+}
+
 /* Portfolio Index */
 
 a.folio-thumb {
@@ -261,7 +265,6 @@ div.folio-thumb-grid {
   }
   
   article div.gallery {
-    margin-top: 40px;
     margin-right: -20px;
     overflow: hidden;
   }
