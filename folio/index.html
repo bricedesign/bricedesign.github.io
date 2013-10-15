@@ -2,16 +2,18 @@
 layout: default
 title: Portfolio
 location: /folio/
+body-class: folio
 ---
 
-<h3>Portfolio</h3>
+<h3 id="site-section-heading">Portfolio</h3>
+
 <h4>All Categories</h4>
 
-{% for post in site.posts %}
-  <div class="folio-thumb-grid">
+<div class="folio-thumb-grid">
+  {% for post in site.posts %}
     <a href="{{ post.url }}" class="folio-thumb">
-      <img width="300" height="220"/>
+      <img width="300" height="220" />
       {{ post.title }}
     </a>
-  </div>
-{% endfor %}
+  {% endfor %}
+</div>

@@ -20,7 +20,7 @@ img, section, article, header, footer, nav {
 
 /* Elements Visible for Accessibility & Semantics Only */
 
-#root-nav h3, #section-heading, #all-projects-nav, #all-projects-nav h4 {
+#root-nav h3, #site-section-heading, #all-projects-nav, #all-projects-nav h4 {
   display: none;
 }
 
@@ -235,6 +235,7 @@ article img {
 
 a.folio-thumb {
   display: block;
+  overflow: hidden;
   float: left;
   text-align: right;
   margin-bottom: 20px;
@@ -248,11 +249,17 @@ a.folio-thumb img {
 
 div.folio-thumb-grid {
   margin-right: -20px;
+  overflow: hidden;
 }
 
 /* Viewports 660px or Wider */
 
 @media only screen and (min-width:660px) {  
+  div#content-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
   article div.gallery {
     margin-top: 40px;
     margin-right: -20px;
@@ -274,7 +281,7 @@ div.folio-thumb-grid {
 /* Viewports 1020px or Wider */
 
 @media only screen and (min-width:1020px) {
-  #content-wrapper {
+  div#content-wrapper {
     width: 1020px;
     padding-left: 40px;
     padding-right: 40px;
@@ -296,7 +303,7 @@ div.folio-thumb-grid {
   
   #all-projects-nav {
     display: block;
-    margin-top: 50px;
+    margin-top: 60px;
     float: right;
     width: 240px;
     border-left: 1px solid #CDCCCC;
