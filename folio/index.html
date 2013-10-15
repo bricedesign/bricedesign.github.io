@@ -10,7 +10,7 @@ body-class: folio
 <div class="folio-thumb-grid">
   {% for post in site.posts %}
     <a href="{{ post.url }}" class="folio-thumb">
-      <img src="{{ post.url}}/thumb.jpg" width="300" height="220" />
+      <img src="{{ post.url}}/thumb.jpg" srcset="{{ post.url}}/thumb@2x.jpg 2x" width="300" height="220" />
       {{ post.title }}
     </a>
   {% endfor %}
