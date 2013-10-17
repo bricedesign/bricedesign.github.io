@@ -99,6 +99,19 @@ body > header > div.wrapper {
   margin-right: auto;
 }
 
+/* Footer */
+
+body > footer {
+  background-image: url(/images/dark-grain.jpg);
+  background-size: 260px 100px;
+}
+
+body > footer > div.wrapper {
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Masthead */
 
 hgroup#masthead {
@@ -238,6 +251,44 @@ article div.gallery {
   margin-top: 40px;
 }
 
+/* @group Home */
+
+body.home section#intro {
+  text-align: justify;
+}
+
+body.home div#content-wrapper {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  max-width: 660px;
+}
+
+body.home section#intro h5 {
+  display: none;
+}
+
+body.home section#slideshow {
+  display: block;
+  
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  margin-bottom: 20px;
+  
+  overflow: hidden;
+  
+  /*float: right;*/
+  
+  background-color: silver;
+}
+
+body.home section#slideshow img {
+  width: 100%;
+  height: auto;
+}
+
+/* @end */
+
 /* Portfolio Index */
 
 a.folio-thumb {
@@ -308,6 +359,11 @@ div.folio-thumb-grid {
     width: 1020px;
     height: 160px;
   }
+  
+  body > footer > div.wrapper {
+    width: 1020px;
+    height: 180px;
+  }
 
   /* Projects Navigation */
   
@@ -364,6 +420,22 @@ div.folio-thumb-grid {
   article > h4 {
     text-align: left;
   }
+
+/* @group Home */
+
+  body.home div#content-wrapper {
+    max-width: 1020px;
+  }
+  
+  body.home section#slideshow {
+    float: right;
+  }
+  
+  body.home section#intro {
+    width: 300px;
+  }
+
+/* @end */
 }
 
 /* High Resolution */

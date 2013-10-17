@@ -1,13 +1,17 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Home
+body-class: home
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<h4 id="site-section-heading">Home</h4>
+  
+  <section id="slideshow">
+    <img src="hero.jpg" alt="" />
+  </section>
+  
+  <section id="intro">
+    <h5>Introduction</h5>
+    
+    <p>Formed in 2010, Brice Design Consultants carry out the design and project management of commercial and residential interiors projects. <a href="/about">More&nbsp;Information…</a></p>
+  </section>
