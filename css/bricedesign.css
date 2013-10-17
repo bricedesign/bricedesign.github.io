@@ -110,6 +110,9 @@ body > footer > div.wrapper {
   height: 180px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 940px;
 }
 
 /* Masthead */
@@ -260,7 +263,7 @@ body.home section#intro {
 body.home div#content-wrapper {
   margin-top: 60px;
   margin-bottom: 80px;
-  max-width: 660px;
+  max-width: 640px;
 }
 
 body.home section#intro h5 {
@@ -312,14 +315,9 @@ div.folio-thumb-grid {
 
 /* Viewports 660px or Wider */
 
-@media only screen and (min-width:660px) {  
-  div#content-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
+@media only screen and (min-width:660px) {    
   body.folio div#content-wrapper {
-    width: 660px;
+    width: 640px;
   }
   
   article div.gallery {
@@ -343,9 +341,7 @@ div.folio-thumb-grid {
 
 @media only screen and (min-width:1020px) {
   div#content-wrapper, body.folio div#content-wrapper {
-    width: 1020px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 960px;
   }
   
   article {
@@ -358,11 +354,6 @@ div.folio-thumb-grid {
   body > header > div.wrapper {
     width: 1020px;
     height: 160px;
-  }
-  
-  body > footer > div.wrapper {
-    width: 1020px;
-    height: 180px;
   }
 
   /* Projects Navigation */
@@ -424,7 +415,7 @@ div.folio-thumb-grid {
 /* @group Home */
 
   body.home div#content-wrapper {
-    max-width: 1020px;
+    max-width: 960px;
   }
   
   body.home section#slideshow {
