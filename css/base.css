@@ -105,7 +105,7 @@ body > header > div.wrapper {
 
 body > footer {
   background-image: url(/images/dark-grain.jpg);
-  background-image: -webkit-image-set( url(/images/header-background.jpg) 1x, url(/images/header-background@2x.jpg) 2x );
+  background-image: -webkit-image-set( url(/images/dark-grain.jpg) 1x, url(/images/dark-grain@2x.jpg) 2x );
   background-size: 260px 100px;
 }
 
