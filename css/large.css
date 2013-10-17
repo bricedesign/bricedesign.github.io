@@ -1,0 +1,89 @@
+/* Viewports 1020px or Wider */
+
+div#content-wrapper, body.folio div#content-wrapper {
+  width: 960px;
+}
+
+article {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Page Header */
+
+body > header > div.wrapper {
+  width: 1020px;
+  height: 160px;
+}
+
+/* Projects Navigation */
+
+#all-projects-nav {
+  display: block;
+  margin-top: 60px;
+  float: right;
+  width: 240px;
+  border-left: 1px solid #CDCCCC;
+  line-height: 3.333em;
+}
+
+#all-projects-nav ul {
+  list-style-type: none;
+}
+
+#all-projects-nav ul li {
+  padding-left: 20px;
+}
+
+#all-projects-nav ul li.here {
+  background: url(/images/sidenav-lowlight.png) left center no-repeat;
+  background-image: -webkit-image-set( url(/images/sidenav-lowlight.png) 1x, url(/images/sidenav-lowlight@2x.png) 2x );
+  background-size: 239px 40px;
+}
+
+/* Root Navigation */
+
+#root-nav {
+  top: 80px;
+  right: 40px;
+  margin-right: 0;
+}
+
+#root-nav ul li.here {
+  background-image: url(/images/topnav-lowlight-upper.png);
+  background-image: -webkit-image-set( url(/images/topnav-lowlight-upper.png) 1x, url(/images/topnav-lowlight-upper@2x.png) 2x );
+}
+
+/* Masthead */
+
+hgroup#masthead {
+  left: 30px;
+  margin-left: 0;
+}
+
+/* Page Header */
+
+#page-header-wrapper {
+  max-width: 1020px;
+  height: 120px;
+}
+
+/* Article */
+
+article > h4 {
+  text-align: left;
+}
+
+/* @group Home */
+
+body.home div#content-wrapper {
+  max-width: 960px;
+}
+
+body.home section#slideshow {
+  float: right;
+}
+
+body.home section#intro {
+  width: 300px;
+}

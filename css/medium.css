@@ -1,0 +1,20 @@
+/* Viewports 660px or Wider */
+    
+body.folio div#content-wrapper {
+  width: 640px;
+}
+
+article div.gallery {
+  margin-right: -20px;
+  overflow: hidden;
+}
+
+article img {
+  float: left;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+article h1 {
+  text-align: left;
+}
