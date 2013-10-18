@@ -8,7 +8,7 @@ div#content-wrapper, body.folio div#content-wrapper {
 
 /* Article */
 
-article {
+body.project article {
   margin-left: 0;
   margin-right: 0;
 }
@@ -17,6 +17,9 @@ article {
 
 body > header > div.wrapper {
   height: 160px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
 }
 
 /* @group Projects Navigation */
@@ -77,14 +80,14 @@ hgroup#masthead {
 
 /* Article */
 
-article > h4 {
+body.project article > h4 {
   text-align: left;
 }
 
 /* @group Home */
 
-body.home div#content-wrapper {
-  max-width: 960px;
+body.home div#content-wrapper, body.contact div#content-wrapper {
+  width: 960px;
 }
 
 body.home section#slideshow {
@@ -94,6 +97,25 @@ body.home section#slideshow {
 body.home section#intro {
   width: 220px;
   float: right;
+}
+
+/* @end */
+
+/* @group Contact Page */
+
+body.contact article {
+  margin-right: -20px;
+}
+
+body.contact article > section {
+  margin-right: 20px;
+  padding-left: 0;
+  float: left;
+  background-position: left 40px;  
+}
+
+body.contact article > section > h4 {
+  margin-bottom: 220px;
 }
 
 /* @end */

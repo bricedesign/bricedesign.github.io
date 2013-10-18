@@ -2,26 +2,51 @@
     
 /* Folio */
 
-body.folio div#content-wrapper {
+div#content-wrapper, body.folio div#content-wrapper, body.contact div#content-wrapper {
   width: 640px;
 }
 
 /* @group Project Article */
 
-article div.gallery {
+body.project article div.gallery {
   margin-right: -20px;
   overflow: hidden;
 }
 
-article div.gallery img {
+body.project article div.gallery img {
   float: left;
   margin-left: 0;
   margin-right: 20px;
 }
 
-article h1 {
+body.project article h1 {
   text-align: left;
 }
+
+/* @end */
+
+/* @group Contact Page */
+
+body.contact article > section.email {
+  background-image: url(/images/keyboard.jpg);
+}
+
+body.contact article > section.phone {
+  background-image: url(/images/telegraph.jpg);
+}
+
+body.contact article > section.location {
+  background-image: url(/images/map.jpg);
+}
+
+body.contact article > section {
+  width: 300px;
+  min-height: 180px;
+  padding-left: 320px; 
+  background-repeat: no-repeat;
+  background-position: left top; 
+}
+
 
 /* @end */
 

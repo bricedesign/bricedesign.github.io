@@ -69,7 +69,7 @@ h4 {
   font-size: 16px;
 }
 
-article > h4 {
+body.project article > h4 {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -109,8 +109,6 @@ body > header > div.wrapper {
   width: 100%;
   max-width: 940px;
   height: 180px;
-  padding-left: 10px;
-  padding-right: 10px;
   
   margin-left: auto;
   margin-right: auto;
@@ -285,7 +283,7 @@ body.folio div#content-wrapper {
 
 /* @group Article */
 
-article {
+body.project article {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -294,16 +292,16 @@ article {
   text-align: justify;
 }
 
-article img {
+body.project article img {
   margin-bottom: 20px;
 }
 
-article h1 {
+body.project article h1 {
   text-align: center;
   margin-bottom: 40px;
 }
 
-article img {
+body.project article img {
   max-width: 100%;
   height: auto;
   margin-left: auto;
@@ -313,11 +311,11 @@ article img {
   cursor: -moz-zoom-in;
 }
 
-article div.gallery {
+body.project article div.gallery {
   margin-top: 40px;
 }
 
-article footer {
+body.project article footer {
   margin-top: 39px;
   padding: 20px;
   border-top: 1px solid silver;
@@ -358,6 +356,14 @@ body.home section#slideshow {
 body.home section#slideshow img {
   width: 100%;
   height: auto;
+}
+
+/* @end */
+
+/* @group Contact */
+
+body.contact div#content-wrapper {
+  width: 320px;
 }
 
 /* @end */
