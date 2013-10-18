@@ -33,9 +33,9 @@
         <hgroup id="masthead">
           <h1>
             {% if page.url == '/index.html' %}
-              {{ site.name }}
+              {{ site.title }}
             {% else %}
-              <a href="/">{{ site.name }}</a>
+              <a href="/">{{ site.title }}</a>
             {% endif %}
           </h1>
           
@@ -54,8 +54,6 @@
     
     <!-- Page Footer -->
     
-    <footer>
-      <div class="wrapper">This is the footer where there are things.</div>
-    </footer>
+    {% include footer.html %}
   </body>
 </html>

@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #666666;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   margin-bottom: 40px;
 }
 
@@ -71,6 +71,7 @@ h4 {
 
 article > h4 {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 /* @end */
@@ -87,7 +88,7 @@ a:hover, a:active {
 }
 
 a:visited {
-  
+  color: hsl(169, 23%, 50%);
 }
 
 /* @end */
@@ -106,7 +107,11 @@ body > header {
 body > header > div.wrapper {
   position: relative;
   width: 100%;
+  max-width: 940px;
   height: 180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
   margin-left: auto;
   margin-right: auto;
 }
@@ -119,15 +124,35 @@ body > footer {
   background-image: url(/images/dark-grain.jpg);
   background-image: -webkit-image-set( url(/images/dark-grain.jpg) 1x, url(/images/dark-grain@2x.jpg) 2x );
   background-size: 260px 100px;
+  
+  color: #D8D8D8;
+}
+
+body > footer section {
+  width: 300px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+body > footer section:first-child {
+  margin-right: 20px;
 }
 
 body > footer > div.wrapper {
-  max-width: 940px;
-  height: 180px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  overflow: hidden;
+}
+
+body > footer span.medium {
+  display: inline-block;
+  width: 60px;
+  font-weight: bolder;
 }
 
 /* @end */
@@ -290,6 +315,15 @@ article img {
 
 article div.gallery {
   margin-top: 40px;
+}
+
+article footer {
+  margin-top: 39px;
+  padding: 20px;
+  border-top: 1px solid silver;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-style: italic;
+  text-align: right;
 }
 
 /* @end */

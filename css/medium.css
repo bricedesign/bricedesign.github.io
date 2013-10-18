@@ -1,15 +1,19 @@
 /* Viewports 660px or Wider */
     
+/* Folio */
+
 body.folio div#content-wrapper {
   width: 640px;
 }
+
+/* @group Project Article */
 
 article div.gallery {
   margin-right: -20px;
   overflow: hidden;
 }
 
-article img {
+article div.gallery img {
   float: left;
   margin-left: 0;
   margin-right: 20px;
@@ -18,3 +22,13 @@ article img {
 article h1 {
   text-align: left;
 }
+
+/* @end */
+
+/* @group Footer */
+
+body > footer > div.wrapper {
+  width: 620px;
+}
+
+/* @end */

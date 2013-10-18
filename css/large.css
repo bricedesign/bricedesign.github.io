@@ -1,8 +1,12 @@
 /* Viewports 1020px or Wider */
 
+/* Main Content */
+
 div#content-wrapper, body.folio div#content-wrapper {
   width: 960px;
 }
+
+/* Article */
 
 article {
   margin-left: 0;
@@ -12,11 +16,10 @@ article {
 /* Page Header */
 
 body > header > div.wrapper {
-  width: 1020px;
   height: 160px;
 }
 
-/* Projects Navigation */
+/* @group Projects Navigation */
 
 #all-projects-nav {
   display: block;
@@ -41,11 +44,13 @@ body > header > div.wrapper {
   background-size: 239px 40px;
 }
 
-/* Root Navigation */
+/* @end */
+
+/* @group Root Navigation */
 
 #root-nav {
   top: 80px;
-  right: 40px;
+  right: 10px;
   margin-right: 0;
 }
 
@@ -54,10 +59,12 @@ body > header > div.wrapper {
   background-image: -webkit-image-set( url(/images/topnav-lowlight-upper.png) 1x, url(/images/topnav-lowlight-upper@2x.png) 2x );
 }
 
+/* @end */
+
 /* Masthead */
 
 hgroup#masthead {
-  left: 30px;
+  left: 0;
   margin-left: 0;
 }
 
@@ -87,6 +94,14 @@ body.home section#slideshow {
 body.home section#intro {
   width: 220px;
   float: right;
+}
+
+/* @end */
+
+/* @group Footer */
+
+body > footer > div.wrapper {
+  width: 940px;
 }
 
 /* @end */
