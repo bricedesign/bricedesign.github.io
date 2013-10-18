@@ -18,6 +18,10 @@ img, section, article, header, footer, nav {
   display: block;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 /* Elements Visible for Accessibility & Semantics Only */
 
 #root-nav h3, #site-section-heading, #all-projects-nav, #all-projects-nav h4 {
@@ -27,19 +31,17 @@ img, section, article, header, footer, nav {
 /* Body */
 
 body {
-  /* Fonts */
   font-family: Lato, sans-serif;
   font-size: 0.750em;
   line-height: 1.666em;
   
-  /* Colors */
   background-color: #E5E5E5;
   background-image: url(/images/light-grain.jpg);
   background-image: -webkit-image-set( url(/images/light-grain.jpg) 1x, url(/images/light-grain@2x.jpg) 2x );
   color: #737373;
 }
 
-/* Headings */
+/* @group Headings */
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
@@ -71,18 +73,26 @@ article > h4 {
   text-align: center;
 }
 
-/* Links */
+/* @end */
+
+/* @group Links */
 
 a:link {
   color: #E68300;
   text-decoration: underline;
 }
 
-a:hover {
+a:hover, a:active {
   text-decoration: none;
 }
 
-/* Page Header */
+a:visited {
+  
+}
+
+/* @end */
+
+/* @group Page Header */
 
 body > header {
   width: 100%;
@@ -101,7 +111,9 @@ body > header > div.wrapper {
   margin-right: auto;
 }
 
-/* Footer */
+/* @end */
+
+/* @group Footer */
 
 body > footer {
   background-image: url(/images/dark-grain.jpg);
@@ -110,15 +122,17 @@ body > footer {
 }
 
 body > footer > div.wrapper {
+  max-width: 940px;
   height: 180px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 940px;
 }
 
-/* Masthead */
+/* @end */
+
+/* @group Masthead */
 
 hgroup#masthead {
   width: 280px;
@@ -127,10 +141,22 @@ hgroup#masthead {
   left: 50%;
   top: 30px;
   margin-left: -140px;
+  
   background: url(/images/masthead.png) left top no-repeat;
   background-size: 280px 70px;
+  
   text-indent: -1000%;
 }
+
+/* High Resolution */
+
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  hgroup#masthead {
+    background-image: url(/images/masthead@2x.png);
+  }
+}
+
+/* Masthead Heading */
 
 #masthead > h1 {
   position: absolute;
@@ -141,6 +167,8 @@ hgroup#masthead {
   left: 0;
 }
 
+/* Masthead Link */
+
 #masthead > h1 > a {
   position: absolute;
   top: 10px;
@@ -148,6 +176,8 @@ hgroup#masthead {
   bottom: 10px;
   left: 10px;  
 }
+
+/* Masthead Strapline */
 
 #masthead > h2 {
   position: absolute;
@@ -158,11 +188,9 @@ hgroup#masthead {
   left: 0;
 }
 
-#masthead a {
-  color: white;
-}
+/* @end */
 
-/* Root Navigation */
+/* @group Root Navigation */
 
 #root-nav {
   position: absolute;
@@ -202,13 +230,15 @@ hgroup#masthead {
   background-size: 100px 40px;
 }
 
+/* @end */
+
 /* Next/Previous Projects Navigation */
 
 #adjacent-projects-nav {
   display: none;
 }
 
-/* Main Content */
+/* @group Main Content */
 
 #content-wrapper {
   width: 100%;
@@ -219,12 +249,16 @@ hgroup#masthead {
   overflow: hidden;
 }
 
+/* Folio */
+
 body.folio div#content-wrapper {
   margin-top: 60px;
   width: 320px;
 }
 
-/* Article */
+/* @end */
+
+/* @group Article */
 
 article {
   margin-left: auto;
@@ -235,7 +269,7 @@ article {
   text-align: justify;
 }
 
-article img, article p {
+article img {
   margin-bottom: 20px;
 }
 
@@ -258,11 +292,9 @@ article div.gallery {
   margin-top: 40px;
 }
 
-/* @group Home */
+/* @end */
 
-body.home section#intro {
-  text-align: justify;
-}
+/* @group Home */
 
 body.home div#content-wrapper {
   margin-top: 60px;
@@ -296,7 +328,7 @@ body.home section#slideshow img {
 
 /* @end */
 
-/* Portfolio Index */
+/* @group Portfolio Thumbnails */
 
 a.folio-thumb {
   display: block;
@@ -316,3 +348,5 @@ div.folio-thumb-grid {
   margin-right: -20px;
   overflow: hidden;
 }
+
+/* @end */

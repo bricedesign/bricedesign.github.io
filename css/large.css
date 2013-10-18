@@ -81,9 +81,12 @@ body.home div#content-wrapper {
 }
 
 body.home section#slideshow {
-  float: right;
+  float: left;
 }
 
 body.home section#intro {
-  width: 300px;
+  width: 220px;
+  float: right;
 }
+
+/* @end */
