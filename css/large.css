@@ -1,9 +1,13 @@
+/* @override 
+	http://localhost:4000/css/large.css */
+
 /* Viewports 1020px or Wider */
 
 /* Main Content */
 
-div#content-wrapper, body.folio div#content-wrapper {
+div#content-wrapper, body.folio div#content-wrapper, body.home div#content-wrapper, body.contact div#content-wrapper {
   width: 960px;
+  max-width: 960px;
 }
 
 /* Article */
@@ -85,10 +89,6 @@ body.project article > h4 {
 }
 
 /* @group Home */
-
-body.home div#content-wrapper, body.contact div#content-wrapper {
-  width: 960px;
-}
 
 body.home section#slideshow {
   float: left;
