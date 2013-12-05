@@ -230,6 +230,7 @@ hgroup#masthead {
 #root-nav a {
   color: #FF9100; /* Slightly brighter than normal links for darker background */
   text-decoration: none;
+  line-height: 40px;
 }
 
 #root-nav a:hover {
@@ -243,14 +244,14 @@ hgroup#masthead {
 
 #root-nav ul li {
   float: left;
-  width: 100px;
-  height: 40px;  
+  width: 6.25em;
+  height: 2.5em;  
 }
 
 #root-nav ul li.here {
   background: url(/images/topnav-lowlight-lower.png) left top no-repeat;
   background-image: -webkit-image-set( url(/images/topnav-lowlight-lower.png) 1x, url(/images/topnav-lowlight-lower@2x.png) 2x );
-  background-size: 100px 40px;
+  background-size: 100% 40px;
 }
 
 /* @end */
@@ -414,6 +415,7 @@ a.folio-thumb:hover span {
 
 div.folio-thumb-grid {
   margin-right: -20px;
+  margin-bottom: -20px;
   overflow: hidden;
 }
 
