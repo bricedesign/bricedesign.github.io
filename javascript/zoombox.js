@@ -37,7 +37,11 @@ function recenter() {
 $imgholder.load(recenter);
 
 // when an image link with a class of 'zoombox' is clicked… 
-$('a.zoombox').click(function() {  
+$('a.zoombox').click(function() {
+  // reset the zoom image to the loading animation
+  $imgholder.attr('src', '/images/loader.gif');
+  recenter();  
+  
   // get the href of the clicked link and store it in the variable zoomURL:
   var zoomURL = $(this).attr('href');
   

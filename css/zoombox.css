@@ -8,6 +8,7 @@ div#zoombox {
   background-color: rgba(0, 0, 0, 0.85);
   
   -webkit-transition: opacity 0.2s, visibility 0.2s;
+  -moz-transition: opacity 0.2s, visibility 0.2s;
 }
 
 div#zoombox.open {
@@ -27,14 +28,12 @@ div#zoombox img {
   position: absolute;
   left: 50%;
   top: 50%;
+    
+  /*-webkit-transition: -webkit-transform 0.25s ease-out;
   
-  background-color: gray;
-  
-  -webkit-transition: -webkit-transform 0.25s ease-out;
-  
-  -webkit-transform: scale(1);
+  -webkit-transform: scale(1);*/
 }
 
-div#zoombox.closed img {
+/*div#zoombox.closed img {
   -webkit-transform: scale(0.9);
-}
+}*/

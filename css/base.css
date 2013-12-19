@@ -410,6 +410,7 @@ a.folio-thumb span {
   right: 0;
   
   -webkit-transition: padding-bottom 0.1s;
+  -moz-transition: padding-bottom 0.1s;
 }
 
 a.folio-thumb:hover span {
