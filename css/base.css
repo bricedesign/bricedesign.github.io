@@ -34,6 +34,7 @@ body {
   font-family: Lato, sans-serif;
   font-size: 0.750em;
   line-height: 1.666em;
+  word-spacing: 0.2em;
   
   background-color: #E5E5E5;
   background-image: url(/images/light-grain.jpg);
@@ -290,7 +291,7 @@ body.project article {
   width: 100%;
   max-width: 620px;
   box-sizing: border-box;
-  text-align: justify;
+  text-align: left;
 }
 
 body.project article img {
@@ -307,7 +308,9 @@ body.project article img {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  
+}
+
+body.project div.gallery a img {
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
 }

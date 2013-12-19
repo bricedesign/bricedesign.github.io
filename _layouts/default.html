@@ -23,9 +23,16 @@
     <link rel="stylesheet" href="/css/base.css" media="screen">
     <link rel="stylesheet" href="/css/medium.css" media="screen and (min-width: 660px)" />
     <link rel="stylesheet" href="/css/large.css" media="screen and (min-width: 1020px)" />
+    <link rel="stylesheet" href="/css/zoombox.css" media="screen" />
   </head>
     
   <body class="{{ page.body-class }}">
+    <!-- ZoomBox -->
+    
+    <div id="zoombox" class="closed">
+      <img />
+    </div>
+    
     <!-- Header -->
     
     <header>
@@ -55,5 +62,10 @@
     <!-- Page Footer -->
     
     {% include footer.html %}
+    
+    <!-- JavaScript -->
+    
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/zoombox.js"></script>
   </body>
 </html>

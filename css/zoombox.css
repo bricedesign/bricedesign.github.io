@@ -1,0 +1,40 @@
+div#zoombox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.85);
+  
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+}
+
+div#zoombox.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+div#zoombox.closed {
+  opacity: 0;
+  visibility: hidden;
+}
+
+div#zoombox img {
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  
+  background-color: gray;
+  
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  
+  -webkit-transform: scale(1);
+}
+
+div#zoombox.closed img {
+  -webkit-transform: scale(0.9);
+}
