@@ -51,6 +51,13 @@ body > header > div.wrapper {
   background-size: 239px 40px;
 }
 
+#all-projects-nav.fixed {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  margin-left: 229px;
+}
+
 /* @end */
 
 /* @group Root Navigation */
