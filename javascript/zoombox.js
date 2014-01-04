@@ -1,5 +1,5 @@
 var $zoombox = $('div#zoombox'); // the zoombox
-var $imgholder = $zoombox.children('img'); // the replaceable image
+var $imgholder = $zoombox.children('img.holder'); // the replaceable image
 
 // when the zoombox close link is clicked…
 $zoombox.click(function() {
@@ -38,9 +38,8 @@ $imgholder.load(recenter);
 
 // when an image link with a class of 'zoombox' is clicked… 
 $('a.zoombox').click(function() {
-  // reset the zoom image to the loading animation
-  $imgholder.attr('src', '/images/loader.gif');
-  recenter();  
+  // reset the zoom image to invisbible
+  $imgholder.attr('src', '/images/invisible-dot.png'); 
   
   // get the href of the clicked link and store it in the variable zoomURL:
   var zoomURL = $(this).attr('href');
