@@ -48,7 +48,7 @@ body > header > div.wrapper {
 #all-projects-nav ul li.here {
   background: url(/images/sidenav-lowlight.png) left center no-repeat;
   background-image: -webkit-image-set( url(/images/sidenav-lowlight.png) 1x, url(/images/sidenav-lowlight@2x.png) 2x );
-  background-size: 239px 40px;
+  background-size: 239px 100%;
 }
 
 #all-projects-nav.fixed {
@@ -126,6 +126,38 @@ body.contact article > section > h4 {
 }
 
 /* @end */
+
+section#cv {
+  width: 540px;
+  margin-right: 100px;
+  float: left;
+}
+
+section#services {
+  width: 260px;
+  padding: 20px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+section#services ul {
+  padding-left: 20px;
+}
+
+section#services li {
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 4px;
+  padding-top: 5px;
+}
+
+section#services li:first-child {
+  padding-top: none;
+}
+
+section#services li:last-child {
+  border-bottom: none;
+  padding-bottom: none;
+}
 
 /* @group Footer */
 
