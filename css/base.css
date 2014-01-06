@@ -381,6 +381,10 @@ body.contact div#content-wrapper {
   min-height: 50%;
 }
 
+body.contact article > section {
+  margin-bottom: 20px;
+}
+
 /* @end */
 
 /* @group About Page */
