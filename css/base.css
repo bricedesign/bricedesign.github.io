@@ -279,6 +279,7 @@ hgroup#masthead {
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -299,6 +300,7 @@ body.project article {
   width: 100%;
   max-width: 620px;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   text-align: left;
 }
 
@@ -450,6 +452,7 @@ a.folio-thumb span {
   background-position: right bottom;
   
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding-right: 5px;
   
   width: 100%;
