@@ -135,6 +135,7 @@ body > footer {
   background-size: 260px 100px;
   
   color: #D8D8D8;
+  overflow: hidden;
 }
 
 body > footer section {
