@@ -10,6 +10,7 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    height: 100%;
 }
 
 /* Block Level Elements */
@@ -22,6 +23,10 @@ p {
   margin-bottom: 20px;
 }
 
+q {
+  font-style: italic;
+}
+
 /* Elements Visible for Accessibility & Semantics Only */
 
 #root-nav h3, #site-section-heading, #all-projects-nav, #all-projects-nav h4 {
@@ -31,6 +36,8 @@ p {
 /* Body */
 
 body {
+  height: 100%;
+
   font-family: Lato, sans-serif;
   font-size: 0.750em;
   line-height: 1.666em;
@@ -99,9 +106,9 @@ a:visited {
 body > header {
   width: 100%;
   background-color: #5A5A5A;
-  background-image: url(/images/header-background.jpg);
-  background-image: -webkit-image-set( url(/images/header-background.jpg) 1x, url(/images/header-background@2x.jpg) 2x );
-  background-size: 300px 160px;
+  background-image: url(/images/header-background.png);
+  background-image: -webkit-image-set( url(/images/header-background.png) 1x, url(/images/header-background@2x.png) 2x );
+  background-size: 100px 160px;
   background-position: top center;
   color: white;
 }
@@ -121,6 +128,8 @@ body > header > div.wrapper {
 /* @group Footer */
 
 body > footer {
+  padding-left: 50%;
+
   background-image: url(/images/dark-grain.jpg);
   background-image: -webkit-image-set( url(/images/dark-grain.jpg) 1x, url(/images/dark-grain@2x.jpg) 2x );
   background-size: 260px 100px;
@@ -131,17 +140,14 @@ body > footer {
 body > footer section {
   width: 300px;
   margin-bottom: 20px;
+  margin-right: 20px;
   float: left;
 }
 
-body > footer section:first-child {
-  margin-right: 20px;
-}
-
 body > footer > div.wrapper {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 320px;
+  margin-left: -160px;
+  margin-right: -20px;
   padding-top: 40px;
   padding-bottom: 20px;
   padding-left: 10px;
@@ -369,6 +375,45 @@ body.home section#slideshow img {
 
 body.contact div#content-wrapper {
   width: 320px;
+  min-height: 50%;
+}
+
+/* @end */
+
+/* @group About Page */
+
+section#cv img#portrait {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+section#cv h4 {
+  margin-bottom: 40px;
+}
+
+section#services {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+section#services ul {
+  padding-left: 20px;
+}
+
+section#services li {
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 4px;
+  padding-top: 5px;
+}
+
+section#services li:first-child {
+  padding-top: 0;
+}
+
+section#services li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 /* @end */
@@ -377,10 +422,8 @@ body.contact div#content-wrapper {
 
 a.folio-thumb:link, a.folio-thumb:visited {
   text-decoration: none;
-  color: #666666;
+  color: #595959;
 }
-
-
 
 a.folio-thumb {
   display: block;

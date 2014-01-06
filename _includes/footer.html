@@ -1,11 +1,23 @@
 <footer>
   <div class="wrapper">
-    <section id="about">
-      <h4><a href="/about">About</a></h4>
+    {% if page.blurb != 'hidden' %}
+      <section id="about">
+        <h4>About</h4>
+        
+        <p>Brice Design Consultants specialise in the design and project management of commercial and residential interiors projects. <a href="/about" title="About Brice Design Consultants">More Information…</a></p>
+      </section>
+    {% endif %}
+    
+    <section id="legal">
+      <h4>Legal</h4>
       
-      <p>Brice Design Consultants specialise in the design and project management of commercial and residential interiors projects.</p>
-      
-      <!-- p><a href="/about">More Information…</a></p -->
+      <p>Except where otherwise noted, all content licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">CC-BY-ND</a>
+    </section>
+    
+    <section id="tech">
+      <h4>Technical</h4>
+    
+      <p>Site built by <a href="http://andybrice.net">Andy Brice</a></p>
     </section>
   </div>
 </footer>

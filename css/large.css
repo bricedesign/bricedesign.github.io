@@ -127,6 +127,8 @@ body.contact article > section > h4 {
 
 /* @end */
 
+/* @group About Page */
+
 section#cv {
   width: 540px;
   margin-right: 100px;
@@ -135,34 +137,16 @@ section#cv {
 
 section#services {
   width: 260px;
-  padding: 20px;
   float: left;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
-section#services ul {
-  padding-left: 20px;
-}
-
-section#services li {
-  border-bottom: 1px solid #E5E5E5;
-  padding-bottom: 4px;
-  padding-top: 5px;
-}
-
-section#services li:first-child {
-  padding-top: none;
-}
-
-section#services li:last-child {
-  border-bottom: none;
-  padding-bottom: none;
-}
+/* @end */
 
 /* @group Footer */
 
 body > footer > div.wrapper {
-  width: 940px;
+  width: 960px;
+  margin-left: -480px;
 }
 
 /* @end */

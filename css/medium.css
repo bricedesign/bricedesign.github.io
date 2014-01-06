@@ -56,7 +56,8 @@ body.contact article > section {
 /* @group Footer */
 
 body > footer > div.wrapper {
-  width: 620px;
+  width: 640px;
+  margin-left: -320px;
 }
 
 /* @end */
