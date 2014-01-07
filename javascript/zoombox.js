@@ -37,9 +37,9 @@ function recenter() {
 $imgholder.load(recenter);
 
 // when an image link with a class of 'zoombox' is clicked… 
-$('a.zoombox').click(function() {
+$('a.zoombox').on('click touch', function() {
   // reset the zoom image to invisbible
-  $imgholder.attr('src', '/images/invisible-dot.png'); 
+  $imgholder.attr('src', "/images/invisible-dot.png"); 
   
   // get the href of the clicked link and store it in the variable zoomURL:
   var zoomURL = $(this).attr('href');
