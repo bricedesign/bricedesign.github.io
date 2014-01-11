@@ -29,26 +29,13 @@ body > header > div.wrapper {
 /* @group Projects Navigation */
 
 #all-projects-nav {
+  z-index: 5;
   display: block;
   margin-top: 60px;
   float: right;
   width: 240px;
   border-left: 1px solid #CDCCCC;
-  line-height: 3.333em;
-}
-
-#all-projects-nav ul {
-  list-style-type: none;
-}
-
-#all-projects-nav ul li {
-  padding-left: 20px;
-}
-
-#all-projects-nav ul li.here {
-  background: url(/images/sidenav-lowlight.png) left center no-repeat;
-  background-image: -webkit-image-set( url(/images/sidenav-lowlight.png) 1x, url(/images/sidenav-lowlight@2x.png) 2x );
-  background-size: 239px 100%;
+  line-height: 1.667em;
 }
 
 #all-projects-nav.fixed {
@@ -58,6 +45,27 @@ body > header > div.wrapper {
   margin-left: 229px;
 }
 
+#all-projects-nav ul {
+  list-style-type: none;
+}
+
+#all-projects-nav ul li {
+  position: relative;
+}
+
+#all-projects-nav ul li.here {
+  background: url(/images/sidenav-lowlight.png) left center no-repeat;
+  background-image: -webkit-image-set( url(/images/sidenav-lowlight.png) 1x, url(/images/sidenav-lowlight@2x.png) 2x );
+  background-size: 239px 100%;
+}
+
+#all-projects-nav ul li a, #all-projects-nav ul li.here {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
 /* @end */
 
 /* @group Root Navigation */
@@ -65,19 +73,22 @@ body > header > div.wrapper {
 #root-nav {
   top: 80px;
   right: 10px;
+  bottom: auto;
+  left: auto;
   margin-right: 0;
 }
 
 #root-nav ul li.here {
   background-image: url(/images/topnav-lowlight-upper.png);
   background-image: -webkit-image-set( url(/images/topnav-lowlight-upper.png) 1x, url(/images/topnav-lowlight-upper@2x.png) 2x );
+  background-position-y: top;
 }
 
 /* @end */
 
 /* Masthead */
 
-hgroup#masthead {
+h1#masthead {
   left: 0;
   margin-left: 0;
 }

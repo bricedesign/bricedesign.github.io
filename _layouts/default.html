@@ -44,15 +44,13 @@
     
     <header>
       <div class="wrapper">
-        <hgroup id="masthead">
-          <h1>
-            {% if page.url == '/index.html' %}
-              {{ site.title }}
-            {% else %}
-              <a href="/">{{ site.title }}</a>
-            {% endif %}
-          </h1>
-        </hgroup>
+        <h1 id="masthead">
+          {% if page.url == '/index.html' %}
+            {{ site.title }}
+          {% else %}
+            <a href="/">{{ site.title }}</a>
+          {% endif %}
+        </h1>
         
         {% include root-nav.html %}
       </div>

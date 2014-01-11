@@ -5,8 +5,8 @@
     
 /* Folio */
 
-div#content-wrapper, body.folio div#content-wrapper, body.contact div#content-wrapper {
-  width: 640px;
+body.folio div#content-wrapper, body.contact div#content-wrapper {
+  max-width: 640px;
 }
 
 /* @group Project Article */
@@ -32,14 +32,17 @@ body.project article h1 {
 
 body.contact article > section.email {
   background-image: url(/images/keyboard.jpg);
+  background-image: -webkit-image-set( url(/images/keyboard.jpg) 1x, url(/images/keyboard@2x.jpg) 2x );
 }
 
 body.contact article > section.phone {
   background-image: url(/images/telegraph.jpg);
+  background-image: -webkit-image-set( url(/images/telegraph.jpg) 1x, url(/images/telegraph@2x.jpg) 2x );
 }
 
 body.contact article > section.location {
   background-image: url(/images/map.jpg);
+  background-image: -webkit-image-set( url(/images/map.jpg) 1x, url(/images/map@2x.jpg) 2x );
 }
 
 body.contact article > section {
