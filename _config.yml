@@ -2,7 +2,9 @@ title: Brice Design Consultants
 markdown: redcarpet
 permalink: /folio/:title/
 
-email: ian@bricedesign.co.uk
+email: ian.e.brice@gmail.com
 phone: 07747 031 555
+
+blurb: Brice Design Consultants specialise in the design and project management of commercial and residential interiors.
 
 exclude: [Brice Design.esproj, serve.sh]
