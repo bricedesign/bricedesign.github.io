@@ -29,7 +29,6 @@ body > header > div.wrapper {
 /* @group Projects Navigation */
 
 #all-projects-nav {
-  z-index: 5;
   display: block;
   margin-top: 60px;
   float: right;
@@ -40,6 +39,7 @@ body > header > div.wrapper {
 
 #all-projects-nav.fixed {
   position: fixed;
+  z-index: 5;
   left: 50%;
   top: 0;
   margin-left: 229px;
